@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?><odoo>
+  <data>
+
+    <record id="package_level_tree_view_picking_inherited" model="ir.ui.view">
+      <field name="name">package.level.tree.view.picking.inherited</field>
+      <field name="model">stock.package_level</field>
+      <field name="priority">100</field>
+      <field name="inherit_id" ref="stock.package_level_tree_view_picking"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='package_id']" position="after">
+          <field name="global_quantity" readonly="1" force_save="1"/>
+        </xpath>
+      </field>
+    </record>
+
+
+
+  </data>
+</odoo>
