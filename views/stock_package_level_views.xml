@@ -13,6 +13,18 @@
       </field>
     </record>
 
+    <record id="package_level_tree_view_picking_inherited2" model="ir.ui.view">
+      <field name="name">package.level.tree.view.picking.inherited2</field>
+      <field name="model">stock.package_level</field>
+      <field name="priority">200</field>
+      <field name="inherit_id" ref="stock.package_level_tree_view_picking"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='package_id']" position="after">
+          <field name="product_id" readonly="1" force_save="1"/>
+        </xpath>
+      </field>
+    </record>
+
 
 
   </data>

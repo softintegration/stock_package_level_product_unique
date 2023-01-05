@@ -24,3 +24,8 @@ msgstr "Quantité globale"
 #: model:ir.model,name:stock_package_level_product_unique.model_stock_package_level
 msgid "Stock Package Level"
 msgstr "Niveau de Colisage"
+
+#. module: stock_package_level_product_unique
+#: model:ir.model.fields,field_description:stock_package_level_product_unique.field_stock_package_level__product_id
+msgid "Product"
+msgstr "Article"
