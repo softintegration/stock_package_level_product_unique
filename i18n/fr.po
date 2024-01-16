@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-27 20:51+0000\n"
-"PO-Revision-Date: 2022-12-27 20:51+0000\n"
+"POT-Creation-Date: 2024-01-16 20:32+0000\n"
+"PO-Revision-Date: 2024-01-16 20:32+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,16 +16,21 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: stock_package_level_product_unique
-#: model:ir.model.fields,field_description:stock_package_level_product_unique.field_stock_package_level__global_quantity
-msgid "Global quantity"
-msgstr "Quantité globale"
-
-#. module: stock_package_level_product_unique
-#: model:ir.model,name:stock_package_level_product_unique.model_stock_package_level
-msgid "Stock Package Level"
-msgstr "Niveau de Colisage"
+#: model:ir.model.fields,field_description:stock_package_level_product_unique.field_stock_package_level__qty_done
+msgid "Done"
+msgstr "Fait"
 
 #. module: stock_package_level_product_unique
 #: model:ir.model.fields,field_description:stock_package_level_product_unique.field_stock_package_level__product_id
 msgid "Product"
 msgstr "Article"
+
+#. module: stock_package_level_product_unique
+#: model:ir.model.fields,field_description:stock_package_level_product_unique.field_stock_package_level__global_quantity
+msgid "Qty to do"
+msgstr "À faire"
+
+#. module: stock_package_level_product_unique
+#: model:ir.model,name:stock_package_level_product_unique.model_stock_package_level
+msgid "Stock Package Level"
+msgstr "Niveau de Colisage"

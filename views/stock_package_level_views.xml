@@ -8,7 +8,8 @@
       <field name="inherit_id" ref="stock.package_level_tree_view_picking"/>
       <field name="arch" type="xml">
         <xpath expr="//field[@name='package_id']" position="after">
-          <field name="global_quantity" readonly="1" force_save="1"/>
+          <field name="global_quantity" readonly="1" force_save="1" attrs="{'column_invisible': [('parent.state', '=', 'done')]}"/>
+          <field name="qty_done" readonly="1"  attrs="{'column_invisible': [('parent.state', '!=', 'done')]}"/>
         </xpath>
       </field>
     </record>
